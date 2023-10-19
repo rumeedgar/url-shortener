@@ -13,33 +13,40 @@
   </head>
   <body>
     <div class="container">
-        <h1>URL Compressor</h1>
-        <form action="" method="POST">
-        <label for="fullUrl">Url</label>
-        <input type="url" name="fullUrl" id="fullUrl" />
-        <button type="submit">Compress</button>
-        </form>
+      <h1>URL Compressor</h1>
+      <form action="" method="POST" class="my-4 form-inline">
+        <!-- <label for="fullUrl" class="sr-only">Url</label> -->
+        <input
+          required
+          placeholder="url"
+          type="url"
+          name="fullUrl"
+          id="fullUrl"
+          class="form-control col my-8"
+        />
+        <button class="btn btn-success" type="submit">Compress</button>
+      </form>
 
-        <table>
+      <table>
         <thead>
-            <tr>
+          <tr>
             <th>Full URL</th>
             <th>Short URL</th>
             <th>Clicks</th>
-            </tr>
+          </tr>
         </thead>
         <tbody>
-            <tr>
+          <tr>
             <td>
-                <a href="https://github.com/rumeedgar"
+              <a href="https://github.com/rumeedgar"
                 >https://github.com/rumeedgar</a
-                >
+              >
             </td>
             <td><a href="/123456">123456</a></td>
             <td>10</td>
-            </tr>
+          </tr>
         </tbody>
-        </table>
+      </table>
     </div>
   </body>
 </html>
